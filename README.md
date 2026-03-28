@@ -1,1 +1,26 @@
 # cup9gpuai
+Deploy to Render — required files and steps
+
+Files to export/upload (root):
+- index.html
+- admin.html
+- styles.css
+- api.js
+- auth.js
+- notifications.js
+- profile-data.js
+- profile-ui.js
+- profile-actions-ui.js
+- profile-ui-main.js
+- ui.js
+- ui-main.js
+- script.js
+- profile-guide-download.js
+- all add-otp / add-credit / restore / helper .js files included in the repo (e.g., add-credit-west.js, add-otp-*.js, recalc-lucas.js, etc.)
+- all image assets in project root (gpu-*.png, gpu-purchased.png, gpu-default-gpu.png, gpu-tier-mini.png)
+
+Recommended Render steps:
+1) Create a new Web Service on Render (Static Site or Web Service depending on backend needs). For static-only, use "Static Site".
+2) Upload the full project folder preserving filenames above to the service root.
+3) If your app uses a real backend, set the environment variable CUP9_API_BASE to https://admin-gestione-gpu.onrender.com/ (or your API URL) in Render settings.
+4)
